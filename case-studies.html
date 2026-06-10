@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — Paul Awolusi PM</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">PA<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="case-studies.html" class="active">Case Studies</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Let's Talk</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="section-eyebrow">Deep dives</p>
+      <h1>Case Studies</h1>
+      <p class="page-header-sub">Structured analysis of real product challenges — from research and prioritization to delivery and measurement.</p>
+    </div>
+  </div>
+
+  <!-- CS NAV -->
+  <div class="cs-tabs">
+    <div class="container">
+      <a href="#fitbit" class="cs-tab">Fitbit Retention Overhaul</a>
+      <a href="#vendsync" class="cs-tab">VendSync Roadmap Crisis</a>
+      <a href="#gtm" class="cs-tab">Creative Services GTM</a>
+    </div>
+  </div>
+
+  <!-- ===== CASE STUDY 1: FITBIT ===== -->
+  <section class="cs-section" id="fitbit">
+    <div class="container">
+
+      <div class="cs-header">
+        <div class="cs-number">01</div>
+        <div class="cs-header-text">
+          <p class="section-eyebrow">Health &amp; Fitness Technology · Mobile</p>
+          <h2>Fitbit Mobile Ecosystem (v4.49): Strategic Retention Overhaul Through User-Centered Design</h2>
+        </div>
+      </div>
+
+      <div class="cs-overview-grid">
+        <div class="cs-overview-item">
+          <span class="ov-label">Product</span>
+          <span class="ov-val">Fitbit Mobile Application v4.49</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Role</span>
+          <span class="ov-val">PM · UX Strategist · Lead Researcher</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Objective</span>
+          <span class="ov-val">Improve retention by reducing friction via UCD</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Result</span>
+          <span class="ov-val"><strong>+12.86% overall usability (MAUQ)</strong></span>
+        </div>
+      </div>
+
+      <!-- CHALLENGE -->
+      <div class="cs-block">
+        <h3>The Challenge</h3>
+        <p>The digital health industry continues to grow, yet many fitness applications struggle to retain users beyond the first few months after onboarding. Analysis of the Fitbit mobile experience revealed that excessive cognitive load and inefficient user flows were key contributors to disengagement.</p>
+        <p>Users were required to process large amounts of health data without sufficient context or motivation, creating friction between data collection and perceived value. The goal: transform the experience from a passive health-tracking tool into an intuitive and engaging lifestyle companion.</p>
+      </div>
+
+      <!-- RESEARCH -->
+      <div class="cs-block">
+        <h3>Research &amp; Discovery</h3>
+        <p>A usability evaluation was conducted using the mHealth App Usability Questionnaire (MAUQ) with five active users representing diverse demographics and usage patterns.</p>
+
+        <div class="findings-grid">
+          <div class="finding">
+            <div class="finding-stat">4/5</div>
+            <div class="finding-title">Error Recovery Challenges</div>
+            <p>Participants experienced difficulty correcting mistakes or recovering from unintended actions, increasing task completion friction.</p>
+          </div>
+          <div class="finding">
+            <div class="finding-stat">4/5</div>
+            <div class="finding-title">Time-to-Value Friction</div>
+            <p>Users felt routine tracking activities required more effort and time than expected, reducing overall efficiency.</p>
+          </div>
+          <div class="finding">
+            <div class="finding-stat">Low</div>
+            <div class="finding-title">Emotional Engagement</div>
+            <p>The application lacked motivational elements that encouraged users to celebrate progress or remain connected to fitness goals.</p>
+          </div>
+          <div class="finding">
+            <div class="finding-stat">1/5</div>
+            <div class="finding-title">Poor Network Resilience</div>
+            <p>A participant encountered significant usability issues during network interruptions, with limited feedback from the system.</p>
+          </div>
+        </div>
+
+        <table class="cs-table">
+          <thead>
+            <tr><th>Pain Point</th><th>Observation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Error Recovery</td><td>Users struggled to correct mistakes efficiently</td></tr>
+            <tr><td>Time-to-Value</td><td>Core tasks required excessive effort</td></tr>
+            <tr><td>User Engagement</td><td>Limited emotional connection and motivation</td></tr>
+            <tr><td>Network Reliability</td><td>Poor handling of connectivity issues</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- STRATEGY -->
+      <div class="cs-block">
+        <h3>Product Strategy &amp; Solution Design</h3>
+        <table class="cs-table">
+          <thead>
+            <tr><th>User Problem</th><th>Product Solution</th><th>Expected Impact</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Information Overload</td><td>Simplified Dashboard Experience</td><td>Reduced cognitive load</td></tr>
+            <tr><td>Low Engagement</td><td>Gamified Reward System</td><td>Increased habit formation</td></tr>
+            <tr><td>Limited Personalization</td><td>Personalized Welcome Experience</td><td>Stronger user connection</td></tr>
+            <tr><td>Low-Light Accessibility</td><td>System-Wide Dark Mode</td><td>Improved comfort &amp; accessibility</td></tr>
+            <tr><td>Connectivity Issues</td><td>Offline &amp; Error State Handling</td><td>Improved reliability and trust</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FEATURE ENHANCEMENTS -->
+      <div class="cs-block">
+        <h3>Feature Enhancements</h3>
+
+        <div class="feature-detail">
+          <div class="fd-num">1.1</div>
+          <div class="fd-content">
+            <h4>Dashboard Simplification</h4>
+            <p>The home dashboard was redesigned to prioritize the most important user metrics — daily steps and calories burned. This reduced information overload and improved visibility of key performance indicators.</p>
+            <p class="fd-caption"><em>Figure 1.1: Streamlined Core Dashboard &amp; High-Density Telemetry Overhaul — Optimizing Information Architecture to minimize Time-to-Value (TTV) and eliminate sub-second cognitive load for daily active users.</em></p>
+          </div>
+        </div>
+
+        <div class="feature-detail">
+          <div class="fd-num">1.2</div>
+          <div class="fd-content">
+            <h4>Gamified Reward System</h4>
+            <p>Visual reward mechanisms — milestone badges, achievement icons, and celebratory animations — were introduced to reinforce positive behaviors and encourage continued engagement.</p>
+            <p class="fd-caption"><em>Figure 1.2: Gamified Feedback Loops &amp; Variable Milestone Micro-Rewards — Triggering contextual high-fidelity visual rewards at the point of goal attainment to reinforce positive psychological habit loops.</em></p>
+          </div>
+        </div>
+
+        <div class="feature-detail">
+          <div class="fd-num">1.3</div>
+          <div class="fd-content">
+            <h4>Personalized User Experience</h4>
+            <p>A personalized greeting system was implemented to create a stronger sense of ownership and connection within the application experience.</p>
+            <p class="fd-caption"><em>Figure 1.3: Dynamic Contextualization Header &amp; Personalization Layer — Humanizing the interface using reactive welcome states to deepen user affinity and drive brand emotional loyalty.</em></p>
+          </div>
+        </div>
+
+        <div class="feature-detail">
+          <div class="fd-num">1.4</div>
+          <div class="fd-content">
+            <h4>Dark Mode Implementation</h4>
+            <p>A comprehensive dark mode experience was designed to reduce eye strain, improve accessibility in low-light environments, and align with modern design standards.</p>
+            <p class="fd-caption"><em>Figure 1.4: High-Contrast Low-Light Accessibility Variant — Expanding accessibility guardrails and minimizing eye strain through continuous, premium dark-theme engineering.</em></p>
+          </div>
+        </div>
+
+        <div class="feature-detail">
+          <div class="fd-num">1.5</div>
+          <div class="fd-content">
+            <h4>Improved Error &amp; Offline States</h4>
+            <p>Clear messaging and recovery pathways were introduced for connectivity issues, ensuring users received meaningful feedback during network disruptions.</p>
+            <p class="fd-caption"><em>Figure 1.5: Edge-Case State Handler &amp; Graceful Offline Degradation Screen — Protecting session retention by providing transparent system feedback during sudden network latency dropouts.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="cs-block">
+        <h3>Results &amp; Impact</h3>
+        <div class="results-row">
+          <div class="result-metric">
+            <span class="rm-num">78.41%</span>
+            <span class="rm-label">Baseline Usability</span>
+          </div>
+          <div class="result-metric result-metric--accent">
+            <span class="rm-num">+12.86%</span>
+            <span class="rm-label">Improvement</span>
+          </div>
+          <div class="result-metric">
+            <span class="rm-num">91.27%</span>
+            <span class="rm-label">Post-Redesign Usability</span>
+          </div>
+        </div>
+
+        <div class="outcome-list">
+          <div class="outcome">
+            <div class="outcome-title">12.86% Improvement in Overall Usability</div>
+            <p>The redesigned experience achieved a significant increase in user satisfaction and perceived usability across the MAUQ framework.</p>
+          </div>
+          <div class="outcome">
+            <div class="outcome-title">Reduced User Friction</div>
+            <p>Improvements in navigation, task efficiency, and error handling streamlined the overall experience.</p>
+          </div>
+          <div class="outcome">
+            <div class="outcome-title">Stronger Engagement Potential</div>
+            <p>Gamification and personalization introduced motivational mechanisms supporting long-term retention and habitual usage.</p>
+          </div>
+          <div class="outcome">
+            <div class="outcome-title">Improved User Confidence</div>
+            <p>Enhanced system feedback and offline-state handling increased reliability and trust during real-world usage scenarios.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARKET VALIDATION -->
+      <div class="cs-block cs-block--callout">
+        <h3>Market Validation</h3>
+        <p>An important indicator of product thinking is the ability to identify and prioritize emerging user needs before they become industry standards.</p>
+        <p>In August 2025, <strong>Fitbit introduced native Dark Mode support for Android devices globally</strong> — directly aligning with one of the key recommendations developed during this project. This reinforces the relevance of the research findings and highlights the importance of accessibility-focused design decisions.</p>
+        <p>The alignment between research-driven recommendations and subsequent market direction demonstrates a product approach grounded in user needs, industry awareness, and long-term usability trends.</p>
+      </div>
+
+      <!-- TAKEAWAYS -->
+      <div class="cs-block">
+        <h3>Key Takeaways</h3>
+        <p>This project demonstrated how structured user research, usability testing, and product prioritization can address retention challenges within digital health products. By focusing on user needs, reducing friction, improving accessibility, and introducing motivational experiences, the redesigned Fitbit ecosystem achieved measurable usability improvements while creating a stronger foundation for long-term engagement.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDY 2: VENDSYNC ===== -->
+  <section class="cs-section cs-section--alt" id="vendsync">
+    <div class="container">
+
+      <div class="cs-header">
+        <div class="cs-number">02</div>
+        <div class="cs-header-text">
+          <p class="section-eyebrow">B2B SaaS · African Merchants</p>
+          <h2>Resolving a Q3 Roadmap Prioritization Crisis at VendSync</h2>
+          <p class="cs-sub">How Data-Driven Prioritization Helped Navigate Stakeholder Pressure and Protect Platform Stability</p>
+        </div>
+      </div>
+
+      <div class="cs-overview-grid">
+        <div class="cs-overview-item">
+          <span class="ov-label">Product</span>
+          <span class="ov-val">VendSync — B2B SaaS for African Merchants</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Role</span>
+          <span class="ov-val">Lead Product Manager</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Capacity</span>
+          <span class="ov-val">15 Sprint Points available</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Framework</span>
+          <span class="ov-val"><strong>RICE — Reach × Impact × Confidence ÷ Effort</strong></span>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>The Challenge</h3>
+        <p>I inherited a roadmap with competing priorities from multiple stakeholders, each advocating for a different initiative. With only 15 available engineering points, combined requests exceeded capacity by more than 100%.</p>
+
+        <div class="backlog-grid">
+          <div class="backlog-item backlog-item--high">
+            <div class="bl-points">7 pts</div>
+            <div class="bl-content">
+              <strong>Inventory Database Refactor</strong>
+              <p>Critical — prevent potential Black Friday performance issues</p>
+            </div>
+          </div>
+          <div class="backlog-item">
+            <div class="bl-points">9 pts</div>
+            <div class="bl-content">
+              <strong>AI Inventory Predictor</strong>
+              <p>Executive leadership request</p>
+            </div>
+          </div>
+          <div class="backlog-item">
+            <div class="bl-points">6 pts</div>
+            <div class="bl-content">
+              <strong>Multi-Currency Wallet</strong>
+              <p>Sales team — support potential enterprise customer</p>
+            </div>
+          </div>
+          <div class="backlog-item backlog-item--high">
+            <div class="bl-points">4 pts</div>
+            <div class="bl-content">
+              <strong>Checkout Bug Fix</strong>
+              <p>500+ weekly support tickets — "White Screen" on older Android</p>
+            </div>
+          </div>
+          <div class="backlog-item">
+            <div class="bl-points">8 pts</div>
+            <div class="bl-content">
+              <strong>WhatsApp Checkout Bot</strong>
+              <p>Marketing — acquisition channel support</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="capacity-bar-block">
+          <div class="cap-row">
+            <span>Total requested</span>
+            <div class="cap-bar cap-bar--over"><span>34 points</span></div>
+          </div>
+          <div class="cap-row">
+            <span>Available capacity</span>
+            <div class="cap-bar cap-bar--avail"><span>15 points</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>Prioritization Approach: RICE Framework</h3>
+        <p>To create an objective decision-making process, I applied the RICE framework and incorporated qualitative insights from engineering, sales, support, and executive stakeholders.</p>
+
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th>Initiative</th>
+              <th>Reach</th>
+              <th>Impact</th>
+              <th>Confidence</th>
+              <th>Effort</th>
+              <th>RICE Score</th>
+              <th>Decision</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-approved">
+              <td>Inventory Database Refactor</td>
+              <td>100%</td>
+              <td>High</td>
+              <td>50%</td>
+              <td>7</td>
+              <td><strong>0.143</strong></td>
+              <td><span class="status-approved">Approved</span></td>
+            </tr>
+            <tr class="row-approved">
+              <td>White Screen Checkout Bug</td>
+              <td>12%</td>
+              <td>High</td>
+              <td>50%</td>
+              <td>4</td>
+              <td><strong>0.030</strong></td>
+              <td><span class="status-approved">Approved</span></td>
+            </tr>
+            <tr>
+              <td>WhatsApp Checkout Bot</td>
+              <td>60%</td>
+              <td>Low</td>
+              <td>50%</td>
+              <td>8</td>
+              <td>0.018</td>
+              <td><span class="status-deferred">Deferred</span></td>
+            </tr>
+            <tr>
+              <td>Multi-Currency Wallet</td>
+              <td>5%</td>
+              <td>High</td>
+              <td>70%</td>
+              <td>6</td>
+              <td>0.012</td>
+              <td><span class="status-discovery">Discovery</span></td>
+            </tr>
+            <tr>
+              <td>AI Inventory Predictor</td>
+              <td>0%</td>
+              <td>Minimal</td>
+              <td>30%</td>
+              <td>9</td>
+              <td>0.000</td>
+              <td><span class="status-deferred">Deferred</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cs-block">
+        <h3>Final Roadmap Decision</h3>
+        <div class="decision-grid">
+          <div class="decision-block decision-block--approved">
+            <h4>✓ Approved Engineering Work — 11 Points</h4>
+            <div class="decision-item">
+              <strong>Inventory Database Refactor (7 pts)</strong>
+              <p>Improve platform stability and reduce risk of service disruptions during anticipated Black Friday traffic spikes.</p>
+            </div>
+            <div class="decision-item">
+              <strong>Checkout Bug Resolution (4 pts)</strong>
+              <p>Resolve the "White Screen" issue affecting older Android devices — contributing to significant support volume and transaction failures.</p>
+            </div>
+          </div>
+          <div class="decision-block decision-block--discovery">
+            <h4>◎ Strategic Discovery Work — 0 Engineering Points</h4>
+            <div class="decision-item">
+              <strong>Multi-Currency Wallet → Moved to Discovery</strong>
+              <p>Validate requirements, explore technical approaches, and assess market demand without impacting sprint delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>Managing Executive Stakeholders</h3>
+        <p>One of the most challenging aspects was deferring the AI Inventory Predictor — a feature strongly supported by executive leadership. Instead of framing the decision as a resource constraint, I communicated the rationale through customer impact, platform risk, and business priorities.</p>
+
+        <div class="discussion-points">
+          <div class="dp">
+            <h4>Platform Stability Risk</h4>
+            <p>Engineering assessments indicated that failing to address database performance before Black Friday could result in significant operational disruptions during a critical revenue period.</p>
+          </div>
+          <div class="dp">
+            <h4>Existing Customer Friction</h4>
+            <p>The checkout issue was already impacting active users and generating high support volume. Resolving existing pain points was prioritized over introducing new functionality.</p>
+          </div>
+          <div class="dp">
+            <h4>Limited Validation</h4>
+            <p>The AI Inventory Predictor lacked validated customer demand and required substantial engineering investment compared to higher-priority initiatives.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>Outcomes</h3>
+        <div class="outcome-list">
+          <div class="outcome"><div class="outcome-title">Improved Roadmap Focus</div><p>Engineering capacity concentrated on initiatives directly improving reliability, customer experience, and revenue protection.</p></div>
+          <div class="outcome"><div class="outcome-title">Reduced Operational Risk</div><p>Addressing technical debt proactively reduced the likelihood of platform instability during a high-traffic commercial period.</p></div>
+          <div class="outcome"><div class="outcome-title">Better Stakeholder Alignment</div><p>The RICE framework provided a transparent, objective method for discussing trade-offs across departments.</p></div>
+          <div class="outcome"><div class="outcome-title">Stronger Product Governance</div><p>The process reinforced evidence-based decision-making — ensuring roadmap priorities reflected business value, not organizational influence.</p></div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>Key Lessons</h3>
+        <div class="lessons-grid">
+          <div class="lesson">
+            <strong>Data Creates Alignment</strong>
+            <p>Prioritization frameworks shift conversations away from personal preferences toward measurable impact and business value.</p>
+          </div>
+          <div class="lesson">
+            <strong>Product Leadership Requires Diplomacy</strong>
+            <p>Saying "not now" is often more effective than "no." Successful stakeholder management involves acknowledging strategic goals while sequencing work appropriately.</p>
+          </div>
+          <div class="lesson">
+            <strong>Technical Debt Is a Product Responsibility</strong>
+            <p>Platform reliability and scalability are product concerns. Investing in foundational infrastructure can generate greater long-term value than shipping new features.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <div class="doc-links-row">
+          <a href="https://docs.google.com/document/d/1ugWP_adjqcDe8Ao8F6xLz1tzxpfh7mCf/edit?usp=sharing" target="_blank" rel="noopener" class="doc-link">
+            <span class="doc-icon">↗</span>
+            <div><strong>Full Strategy Document &amp; Prioritization Framework</strong><span>Google Docs</span></div>
+          </a>
+          <a href="https://drive.google.com/file/d/1Ctgf23-SX2Qi9qlFljLFFuScvmxwGu58/view?usp=drivesdk" target="_blank" rel="noopener" class="doc-link">
+            <span class="doc-icon">▶</span>
+            <div><strong>Watch Roadmap Defense Presentation</strong><span>Google Drive</span></div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CASE STUDY 3: GTM ===== -->
+  <section class="cs-section" id="gtm">
+    <div class="container">
+
+      <div class="cs-header">
+        <div class="cs-number">03</div>
+        <div class="cs-header-text">
+          <p class="section-eyebrow">Product Strategy · Creative Services</p>
+          <h2>Building a Go-To-Market Strategy for a Creative Services Brand</h2>
+          <p class="cs-sub">Transforming an Independent Design Practice into a Scalable Service Business</p>
+        </div>
+      </div>
+
+      <div class="cs-overview-grid">
+        <div class="cs-overview-item">
+          <span class="ov-label">Role</span>
+          <span class="ov-val">Product Manager</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Type</span>
+          <span class="ov-val">PRD · Positioning · Go-To-Market Strategy</span>
+        </div>
+        <div class="cs-overview-item">
+          <span class="ov-label">Objective</span>
+          <span class="ov-val">Structure an independent design practice as a scalable service business</span>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>The Challenge</h3>
+        <p>Many independent creative professionals possess strong technical skills but struggle to position themselves effectively in the market. Without a clear product strategy, target audience definition, or customer acquisition plan, growth often relies on inconsistent referrals and ad-hoc opportunities.</p>
+        <p>The objective was to apply product management frameworks to transform a personal design practice into a structured service business with clearly defined customers, value propositions, delivery models, and growth pathways.</p>
+      </div>
+
+      <div class="cs-block">
+        <h3>Product Discovery</h3>
+        <h4>Market Problem</h4>
+        <p>Organizations operate in increasingly crowded communication environments where important messages compete for limited audience attention. Many organizations struggle to translate complex information into visual content that drives awareness, engagement, and action.</p>
+        <h4>Product Positioning</h4>
+        <p>The service was positioned as a visual communication solution — transforming complex information into clear, engaging, audience-centered design experiences. Rather than competing solely on design execution, the positioning emphasized communication effectiveness, audience understanding, and message clarity.</p>
+      </div>
+
+      <div class="cs-block">
+        <h3>Customer Segmentation</h3>
+        <div class="segments-grid">
+          <div class="segment">
+            <h4>Government &amp; Public Sector</h4>
+            <p>Organizations responsible for communicating public information, awareness campaigns, and community initiatives.</p>
+          </div>
+          <div class="segment">
+            <h4>Small Businesses &amp; Startups</h4>
+            <p>Companies seeking stronger brand visibility and customer engagement through visual communication.</p>
+          </div>
+          <div class="segment">
+            <h4>Publishing &amp; Editorial Teams</h4>
+            <p>Organizations requiring consistent, high-quality publication and editorial design support.</p>
+          </div>
+          <div class="segment">
+            <h4>Event &amp; Community Organizers</h4>
+            <p>Individuals and organizations promoting events, programs, and public gatherings.</p>
+          </div>
+          <div class="segment">
+            <h4>Design Learners</h4>
+            <p>Aspiring designers seeking mentorship, practical guidance, and skill development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>Core Service Offerings</h3>
+        <div class="services-list">
+          <div class="service-item">
+            <strong>Public Awareness Campaign Design</strong>
+            <p>Large-scale visual communication assets designed to simplify complex information and increase audience comprehension.</p>
+          </div>
+          <div class="service-item">
+            <strong>Editorial Design Systems</strong>
+            <p>Publication-ready layouts for magazines, reports, and recurring content series.</p>
+          </div>
+          <div class="service-item">
+            <strong>Event Communication Assets</strong>
+            <p>Promotional materials supporting awareness, attendance, and audience engagement.</p>
+          </div>
+          <div class="service-item">
+            <strong>Product Packaging Design</strong>
+            <p>Packaging systems that improve shelf visibility, strengthen brand perception, and support purchasing decisions.</p>
+          </div>
+          <div class="service-item service-item--future">
+            <strong>Future: Design Education Platform</strong>
+            <p>Structured mentorship and learning ecosystem for aspiring designers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>Go-To-Market Strategy</h3>
+        <div class="gtm-phases">
+          <div class="gtm-phase">
+            <span class="phase-tag">Phase 1</span>
+            <h4>Audience Development</h4>
+            <p>Establish credibility, visibility, and trust within the design ecosystem through portfolio-driven Instagram content, design process documentation, educational resources, community participation in Nigerian design networks, and industry events.</p>
+            <div class="phase-metrics">
+              <strong>KPIs:</strong> Audience growth · Portfolio depth · Client acquisition rate · Satisfaction scores
+            </div>
+          </div>
+          <div class="gtm-arrow">→</div>
+          <div class="gtm-phase">
+            <span class="phase-tag">Phase 2</span>
+            <h4>Enterprise &amp; Public Sector Expansion</h4>
+            <p>Secure larger, high-impact projects within government and institutional sectors through strategic outreach, case-study-driven sales, and referral-based expansion across ministries and agencies.</p>
+            <div class="phase-metrics">
+              <strong>KPIs:</strong> Contracts secured · Revenue generated · Portfolio credibility · Campaign outcomes
+            </div>
+          </div>
+          <div class="gtm-arrow">→</div>
+          <div class="gtm-phase">
+            <span class="phase-tag">Phase 3</span>
+            <h4>Business Scaling</h4>
+            <p>Transition from freelance service delivery to a scalable business model through corporate leadership opportunities, design mentorship programs, education products, and community-driven learning platforms.</p>
+            <div class="phase-metrics">
+              <strong>KPIs:</strong> Revenue growth · Student enrollment · Brand recognition · Customer retention
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-block">
+        <h3>PM Contributions &amp; Key Outcomes</h3>
+        <div class="outcome-list">
+          <div class="outcome"><div class="outcome-title">Complete PRD Developed</div><p>Full Product Requirements Document for a service-based business, outlining customer needs, service capabilities, roadmap priorities, and scope boundaries.</p></div>
+          <div class="outcome"><div class="outcome-title">Multi-Segment Value Propositions</div><p>Defined customer segments and value propositions across five distinct markets.</p></div>
+          <div class="outcome"><div class="outcome-title">Phased GTM with KPIs</div><p>Created a three-phase go-to-market strategy with measurable acquisition channels and success metrics.</p></div>
+          <div class="outcome"><div class="outcome-title">End-to-End Product Thinking</div><p>Demonstrated full-cycle PM practice — from discovery and requirements gathering through commercialization and scaling.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">PA<span class="dot">.</span></span>
+      <nav class="footer-nav">
+        <a href="projects.html">Projects</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 Paul Oluwasemilore Awolusi</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

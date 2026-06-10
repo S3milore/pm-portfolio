@@ -1,228 +1,271 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Awolusi | Product Manager Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'Arial', 'Helvetica', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0F172A',
-                        secondary: '#2563EB',
-                        accent: '#14B8A6',
-                        success: '#16A34A',
-                        warning: '#F59E0B',
-                        error: '#DC2626',
-                        background: '#FFFFFF',
-                        surface: '#F8FAFC',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Awolusi — Product Manager</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="bg-background text-primary font-sans antialiased">
+<body>
 
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <a href="#home" class="font-bold text-xl tracking-tight">Paul.PM</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="hover:text-secondary transition-colors">About</a>
-                    <a href="#case-studies" class="hover:text-secondary transition-colors">Case Studies</a>
-                    <a href="#experience" class="hover:text-secondary transition-colors">Experience</a>
-                    <a href="#skills" class="hover:text-secondary transition-colors">Skills</a>
-                    <a href="#contact" class="px-4 py-2 bg-primary text-white rounded-md hover:bg-secondary transition-colors">Contact</a>
-                </div>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">PA<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="experience.html">Experience</a>
+    <a href="contact.html">Let's Talk</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Product Manager · UX Strategist · CS Graduate</p>
+        <h1 class="hero-headline">Building products at the <em>intersection</em> of logic and experience.</h1>
+        <p class="hero-sub">I bridge engineering reality and user needs — turning ambiguous friction into structured solutions that move metrics.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn-primary">View Projects</a>
+          <a href="case-studies.html" class="btn-ghost">Read Case Studies</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">12.86%</span>
+            <span class="stat-label">Usability lift delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">End-to-end products</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Stakeholders aligned</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-image-frame">
+          <img src="assets/profile.jpeg" alt="Paul Awolusi, Product Manager" class="hero-photo" />
+          <div class="hero-badge">
+            <span class="badge-icon">✦</span>
+            <span>Open to opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-label">About me</div>
+        <div class="about-body">
+          <p>I operate at the intersection of <strong>technical engineering, user experience, and product analytics</strong>. Moving beyond guesswork, I leverage a First Class Honours degree in Computer Science alongside deep expertise as a UX Analyst to build digital products that are technically scalable, intuitive to use, and strategically viable.</p>
+          <p>Thriving in fast-paced, remote-first environments, I use strategic triage to evaluate urgency versus product impact — clearing development bottlenecks, aligning stakeholders, and using data-driven insights to move metrics in the right direction.</p>
+          <a href="experience.html" class="link-arrow">Full background →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Selected work</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card project-card--featured">
+          <div class="project-card-image">
+            <img src="assets/mindspace-arch.png" alt="MindSpace System Architecture" />
+            <div class="project-tag">Spatial Computing · AI</div>
+          </div>
+          <div class="project-card-body">
+            <h3>MindSpace</h3>
+            <p class="project-tagline">AI-Powered Mixed Reality Wellness Ecosystem</p>
+            <p>Conceptualized the end-to-end V1.0 product architecture, safety framework, and go-to-market strategy for an AI-powered Mixed Reality wellness platform. Designed as a scalable B2B2C ecosystem focused on preventive wellness and long-term retention.</p>
+            <div class="project-meta">
+              <span class="meta-pill">Product Strategy</span>
+              <span class="meta-pill">PRD</span>
+              <span class="meta-pill">GTM</span>
+              <span class="meta-pill">AI Safety</span>
             </div>
-        </div>
-    </nav>
+            <a href="projects.html#mindspace" class="btn-text">Explore project →</a>
+          </div>
+        </article>
 
-    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div class="flex-1 space-y-6">
-            <h1 class="text-5xl md:text-[56px] font-bold leading-tight text-primary">
-                Product Manager Bridging Technology, UX, and Business Strategy.
-            </h1>
-            <p class="text-xl text-gray-600 max-w-2xl">
-                I build scalable digital products through user-centered research, product strategy, data-driven decision making, and cross-functional leadership.
-            </p>
-            <div class="flex flex-wrap gap-4 pt-4">
-                <a href="#case-studies" class="px-6 py-3 bg-secondary text-white font-medium rounded-md hover:bg-blue-700 transition-colors">View Case Studies</a>
-                <a href="#contact" class="px-6 py-3 border border-gray-300 text-primary font-medium rounded-md hover:bg-gray-50 transition-colors">Contact Me</a>
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <div class="project-card-body">
+            <div class="project-tag-inline">Health Tech · Mobile</div>
+            <h3>Fitbit Retention Overhaul</h3>
+            <p class="project-tagline">+12.86% Usability · Interface Optimization</p>
+            <p>Redesigned the Fitbit Mobile App (v4.49) using a data-driven UCD approach, eliminating key friction points in onboarding, engagement, and retention.</p>
+            <div class="project-meta">
+              <span class="meta-pill">UX Research</span>
+              <span class="meta-pill">Usability Testing</span>
+              <span class="meta-pill">Analytics</span>
             </div>
-        </div>
-        <div class="flex-1 flex justify-center">
-            <img src="your-headshot-url.jpg" alt="Paul Awolusi Professional Headshot" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-surface">
-        </div>
-    </section>
+            <a href="case-studies.html#fitbit" class="btn-text">Read case study →</a>
+          </div>
+          <div class="project-highlight">
+            <span class="highlight-num">+12.86%</span>
+            <span class="highlight-label">Overall usability improvement (MAUQ)</span>
+          </div>
+        </article>
 
-    <section class="bg-surface py-12 border-y border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="p-4 bg-white rounded-lg shadow-sm">
-                    <div class="text-3xl font-bold text-accent mb-2">+12.86%</div>
-                    <div class="text-sm text-gray-600 font-medium">Usability Improvement [cite: 25]</div>
-                </div>
-                <div class="p-4 bg-white rounded-lg shadow-sm">
-                    <div class="text-3xl font-bold text-accent mb-2">8+</div>
-                    <div class="text-sm text-gray-600 font-medium">Cross-Functional Stakeholders Led [cite: 138]</div>
-                </div>
-                <div class="p-4 bg-white rounded-lg shadow-sm">
-                    <div class="text-3xl font-bold text-accent mb-2">3</div>
-                    <div class="text-sm text-gray-600 font-medium">End-to-End Product Case Studies [cite: 7, 23, 99]</div>
-                </div>
-                <div class="p-4 bg-white rounded-lg shadow-sm">
-                    <div class="text-3xl font-bold text-accent mb-2">1st Class</div>
-                    <div class="text-sm text-gray-600 font-medium">Honours in Computer Science [cite: 2]</div>
-                </div>
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-card-body">
+            <div class="project-tag-inline">B2B SaaS · Strategy</div>
+            <h3>VendSync Q3 Roadmap</h3>
+            <p class="project-tagline">Prioritization Crisis · Stakeholder Alignment</p>
+            <p>Resolved a Q3 roadmap crisis with 34 points of demand against 15 available. Applied RICE scoring to protect platform stability while maintaining stakeholder trust.</p>
+            <div class="project-meta">
+              <span class="meta-pill">RICE Framework</span>
+              <span class="meta-pill">Roadmapping</span>
+              <span class="meta-pill">Stakeholder Mgmt</span>
             </div>
-        </div>
-    </section>
+            <a href="case-studies.html#vendsync" class="btn-text">Read case study →</a>
+          </div>
+          <div class="project-highlight">
+            <span class="highlight-num">34→11</span>
+            <span class="highlight-label">Sprint points: demand resolved to delivery</span>
+          </div>
+        </article>
 
-    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="max-w-3xl">
-            <h2 class="text-[40px] font-bold mb-6 text-primary">About Me</h2>
-            <p class="text-lg text-gray-600 mb-4">
-                I am a Product Manager who operates at the intersection of technical engineering, user experience, and product analytics. [cite: 1]
-            </p>
-            <p class="text-lg text-gray-600 mb-4">
-                Moving beyond guesswork, I leverage a First Class Honours degree in Computer Science alongside deep expertise as a UX Analyst to build digital products that are technically scalable, intuitive to use, and strategically viable. [cite: 2] My core strength lies in bridging the gap between high-level business vision and engineering execution. [cite: 3]
-            </p>
-            <p class="text-lg text-gray-600">
-                Thriving in fast-paced, remote-first environments, I utilize strategic triage to evaluate urgency versus product impact. [cite: 5] I clear development bottlenecks, align stakeholders, and use data-driven insights to continually move product metrics in the right direction. [cite: 6]
-            </p>
-        </div>
-    </section>
+      </div>
 
-    <section id="case-studies" class="py-20 bg-surface px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between items-end mb-12">
-                <h2 class="text-[40px] font-bold text-primary">Featured Case Studies</h2>
-                <a href="#all-projects" class="text-secondary font-medium hover:underline hidden sm:block">View All Case Studies &rarr;</a>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <div class="p-6">
-                        <div class="text-xs font-bold text-secondary uppercase tracking-wider mb-2">Spatial Computing & AI</div>
-                        <h3 class="text-2xl font-bold mb-3">MindSpace</h3>
-                        <p class="text-gray-600 mb-6">Designed an AI-powered Mixed Reality wellness platform focused on preventive wellness and long-term retention. [cite: 7, 8]</p>
-                        <a href="#" class="text-secondary font-medium hover:underline">Read Case Study &rarr;</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <div class="p-6">
-                        <div class="text-xs font-bold text-success uppercase tracking-wider mb-2">Retention Optimization</div>
-                        <h3 class="text-2xl font-bold mb-3">Fitbit Mobile Overhaul</h3>
-                        <p class="text-gray-600 mb-6">Redesigned the Fitbit App (v4.49) using User-Centered Design, resulting in a 12.86% increase in overall usability. [cite: 23]</p>
-                        <a href="#" class="text-secondary font-medium hover:underline">Read Case Study &rarr;</a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <div class="p-6">
-                        <div class="text-xs font-bold text-warning uppercase tracking-wider mb-2">Stakeholder Alignment</div>
-                        <h3 class="text-2xl font-bold mb-3">Roadmap Prioritization Crisis</h3>
-                        <p class="text-gray-600 mb-6">Applied the RICE framework to resolve competing backlog priorities, protecting platform stability for Black Friday. [cite: 72, 75, 79]</p>
-                        <a href="#" class="text-secondary font-medium hover:underline">Read Case Study &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="section-footer">
+        <a href="projects.html" class="btn-ghost">All Projects</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <h2 class="text-[40px] font-bold mb-12 text-primary">Experience & Leadership</h2>
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-            <h3 class="text-2xl font-bold mb-2">Product Manager Lead — HNG Internship</h3>
-            <p class="text-gray-500 mb-6">Intensive, fast-paced remote bootcamp [cite: 148]</p>
-            
-            <div class="space-y-4 text-gray-600">
-                <p>
-                    <strong>Project:</strong> Built a voice-enabled AI interviewing platform designed to help recruiters automate structured first-round interviews. [cite: 159]
-                </p>
-                <p>
-                    <strong>Key Contributions:</strong> Led the PM track during the latter half of the internship. [cite: 160] I translated product requirements into standard industry tickets, wrote user stories, clear acceptance criteria, and edge cases to ensure alignment across cross-functional teams. [cite: 161]
-                </p>
-                <p>
-                    <strong>Tools Used:</strong> ClickUp for project management, FigJam for mapping user flows, and Google Workspace for structured documentation. [cite: 162]
-                </p>
-            </div>
+  <!-- COMPETENCIES -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What I bring</p>
+        <h2>Core Competencies</h2>
+      </div>
+      <div class="competencies-grid">
+        <div class="competency">
+          <div class="competency-icon">◈</div>
+          <h4>Product Strategy & Discovery</h4>
+          <p>User-Centered Design, UX audit, heuristic evaluation, information architecture, and translating user friction into structured requirements.</p>
         </div>
-    </section>
-
-    <section id="skills" class="py-20 bg-surface px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-[40px] font-bold mb-8 text-primary">Core Competencies</h2>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <svg class="w-6 h-6 text-accent mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <div>
-                            <span class="font-bold text-primary">Product Strategy & Discovery:</span> 
-                            <span class="text-gray-600">User-Centered Design (UCD), UX Audits, Information Architecture. [cite: 130, 131, 132]</span>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-6 h-6 text-accent mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <div>
-                            <span class="font-bold text-primary">Technical Execution:</span> 
-                            <span class="text-gray-600">Systems Engineering, Agile Frameworks, High-fidelity Prototyping in Figma. [cite: 133, 134, 135]</span>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-6 h-6 text-accent mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <div>
-                            <span class="font-bold text-primary">Product Analytics:</span> 
-                            <span class="text-gray-600">Data-Driven Decision Making, Impact Validation, Metric Tracking. [cite: 136, 137]</span>
-                        </div>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-6 h-6 text-accent mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <div>
-                            <span class="font-bold text-primary">Leadership:</span> 
-                            <span class="text-gray-600">Stakeholder Management, Cross-Functional Leadership, Strategic Prioritization. [cite: 138, 139, 140]</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="text-[40px] font-bold mb-8 text-primary">Certifications</h2>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
-                    <div>
-                        <h4 class="font-bold text-lg">Executive Diploma in UI/UX Design</h4>
-                        <p class="text-gray-500">UniAthena [cite: 141]</p>
-                    </div>
-                    <div class="text-sm font-bold text-secondary bg-blue-50 px-3 py-1 rounded-full">2025 [cite: 141]</div>
-                </div>
-            </div>
+        <div class="competency">
+          <div class="competency-icon">⌥</div>
+          <h4>Technical Execution</h4>
+          <p>CS foundation enabling direct collaboration with engineering teams. Agile workflows, PRDs, Figma prototyping, and feasibility assessment.</p>
         </div>
-    </section>
-
-    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
-        <h2 class="text-[40px] font-bold mb-6 text-primary">Let's build products that solve meaningful problems.</h2>
-        <div class="flex justify-center gap-4 mb-16">
-            <a href="mailto:semiloreawolusi@gmail.com" class="px-8 py-4 bg-primary text-white font-medium rounded-md hover:bg-secondary transition-colors">Email Me</a>
-            <a href="https://www.linkedin.com/in/awolusi-paul-oluwasemilore-94b8811b3" target="_blank" rel="noopener noreferrer" class="px-8 py-4 border border-gray-300 text-primary font-medium rounded-md hover:bg-gray-50 transition-colors">LinkedIn</a>
+        <div class="competency">
+          <div class="competency-icon">◉</div>
+          <h4>Product Analytics</h4>
+          <p>Data-driven prioritization, RICE scoring, MAUQ-based usability measurement, and impact validation through iterative testing.</p>
         </div>
-    </section>
-
-    <footer class="bg-primary text-white py-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
-            <div class="font-bold text-xl mb-4 md:mb-0">Paul.PM</div>
-            <div class="flex space-x-6 text-sm text-gray-400">
-                <a href="wa.me/+2349064336413" class="hover:text-white transition-colors">WhatsApp [cite: 186]</a>
-                <a href="mailto:semiloreawolusi@gmail.com" class="hover:text-white transition-colors">Email [cite: 186]</a>
-                <a href="https://www.linkedin.com/in/awolusi-paul-oluwasemilore-94b8811b3" class="hover:text-white transition-colors">LinkedIn [cite: 186]</a>
-            </div>
+        <div class="competency">
+          <div class="competency-icon">⬡</div>
+          <h4>Leadership & Collaboration</h4>
+          <p>Cross-functional leadership across 8+ stakeholders, diplomatic stakeholder management, and strategic triage for capacity optimization.</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- RECENT EXPERIENCE TEASER -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Background</p>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline-teaser">
+        <div class="timeline-item">
+          <div class="tl-left">
+            <span class="tl-year">2025</span>
+          </div>
+          <div class="tl-right">
+            <h4>HNG Internship i14 — Product Management Track</h4>
+            <p>Led PM track during a two-month intensive remote bootcamp. Built a voice-enabled AI interview platform with a cross-functional team of devs, designers, QA, and marketers.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-left">
+            <span class="tl-year">2025</span>
+          </div>
+          <div class="tl-right">
+            <h4>Executive Diploma in UI/UX Design</h4>
+            <p>UniAthena — Strengthened prototyping, interaction design, and accessibility skills underpinning all product work.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-left">
+            <span class="tl-year">CS</span>
+          </div>
+          <div class="tl-right">
+            <h4>First Class Honours — Computer Science</h4>
+            <p>Academic foundation in systems, software engineering, and human-computer interaction that informs every product decision.</p>
+          </div>
+        </div>
+      </div>
+      <a href="experience.html" class="btn-ghost" style="margin-top:2rem;display:inline-block;">Full experience →</a>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Have a product problem worth solving?</h2>
+      <p>I'm currently available for new roles and projects. Let's talk about what you're building.</p>
+      <a href="contact.html" class="btn-primary">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">PA<span class="dot">.</span></span>
+      <nav class="footer-nav">
+        <a href="projects.html">Projects</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2025 Paul Oluwasemilore Awolusi</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
 </body>
 </html>
